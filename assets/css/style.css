@@ -1,0 +1,77 @@
+/* 
+css - BEM
+Date: 2022-02-10
+*/
+
+@font-face {
+  font-family: 'Exo';
+  src: url('../fonts/Exo-Light.ttf') format('woff2');
+  /*font-style: normal;*/
+  /*font-weight: 300;*/
+}
+
+@font-face {
+    font-family: 'Exo';
+    src: url('../fonts/Exo-Regular.ttf') format('woff2');
+    font-style: normal;
+    /*font-weight: 300;*/
+}
+
+@font-face {
+  font-family: 'Exo';
+  src: url('../fonts/Exo-Bold.ttf') format('woff2');
+  /*font-style: normal;*/
+  /*font-weight: 300;*/
+}
+
+*{font-family: 'Exo';}
+
+body{
+    margin: 0;
+    background: #000;
+}
+img{
+    border: 0;
+}
+.img-responsive{
+    width: 100%;
+}
+
+
+/*HEAD*/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-height: 100px;
+    padding:20px 0;
+}
+
+/*SECCTION VIDEO*/
+.video-container{
+    background: url(../img/background.jpg) no-repeat center center fixed;
+    height: 500px;
+}
+
+/*SECCTION MENU*/
+.menu-container{
+    background: #333;
+    /*width: 100%;*/
+    max-height: 900px;
+    padding: 0 55px;
+}
+.menu-list{
+    display: flex;
+    margin: auto 80px;
+}
+.menu-list li{
+    display: inline-block;
+    margin: 18px;
+}
+
+/*FOOTER*/
+
+
+/*RESPONSIVE*/
+
+
