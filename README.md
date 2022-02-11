@@ -1,2 +1,2 @@
 # claro-video
-Test Frontent
+Test Frontend
