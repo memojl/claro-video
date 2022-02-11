@@ -4,13 +4,12 @@
  * Date: 2022-02-10
  */
 
- //COUNTER REGRESSION
-
+ //COUNTER DOWN
 
 //===
 // VARIABLES
 //===
-const DATE_TARGET = new Date('02/12/2022 0:01 AM');
+const DATE_TARGET = new Date('03/13/2022 0:00 AM');
 // DOM for render
 const SPAN_DAYS = document.querySelector('span#days');
 const SPAN_HOURS = document.querySelector('span#hours');
