@@ -111,6 +111,8 @@ header{
     width: 34px;
     padding: 4px 18px;
     border: 2px solid #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
     border-radius: 50%;
     text-transform: uppercase;
     display: flex;
@@ -146,15 +148,51 @@ header{
     justify-content: space-evenly;
     padding: 0;
 }
+.menu-list li{
+    display: inline-block;
+    cursor: pointer;
+    /*margin: 18px;*/
+    /*background: #fff;*/
+    width: 180px;
+    height: 180px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin: 5px;
+    position: relative;
+}
+.menu-list__imgPlay{
+    width: 180px;
+    height: 180px;
+}
+.menu-list__content{
+    background: #c00;
+    width: 140px;
+    text-align: center;
+    font-size: 14px;
+    padding: 52px 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+}
+.menu-list li:hover>.menu-list__content{
+    opacity: 1;
+    visibility: visible;
+}
 .menu-list__text{
     font-family: 'Exo-bold';
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;
+    padding: 5px 0;
 }
-.menu-list li{
-    display: inline-block;
-    /*margin: 18px;*/
+li:hover >.menu-list__text{
+    color:#c00;
 }
 
 /*FOOTER*/
@@ -170,11 +208,15 @@ footer{
 footer div{
     width: 177px;
     text-align: center;
+    padding-bottom: 5px;
 }
 .footer-rrss__list{
     display: flex;
-    margin: auto;
+    /*margin: auto;*/
     padding: 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
 }
 .footer-rrss__list li{
     display: inline-block;
@@ -193,6 +235,7 @@ footer div{
 @media (max-width: 630px){
     footer{
         flex-direction: column;
+        height: 280px;
     }
     footer div{
         width: auto;

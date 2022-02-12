@@ -4,7 +4,12 @@
  * Date: 2022-02-10
  */
 
- //COUNTER DOWN
+//MENU
+let menu = document.querySelector('[data-menu]');
+let btn_opt = menu.children;
+console.log(btn_opt);
+
+//COUNTER DOWN
 
 //===
 // VARIABLES
