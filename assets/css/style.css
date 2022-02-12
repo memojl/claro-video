@@ -57,6 +57,9 @@ iframe{
 .p14{
     font-size: 14px;
 }
+.p32{
+    font-size: 32px;
+}
 .img-responsive{
     width: 100%;
 }
@@ -87,9 +90,9 @@ header{
 .video-container{
     background: url(../img/background.jpg) no-repeat top center;
     background-size: cover;
-    height: 400px;
+    height: 500px;
     margin-top: 88px;
-    padding: 100px 0px;
+    padding: 50px 0px;
     text-align: center;
 }
 .video-contador__next{
@@ -134,13 +137,20 @@ header{
     background: #333;
     /*width: 100%;*/
     max-height: 900px;
-    padding: 55px 0px;
+    padding: 25px 0px 50px;
 }
 .menu-list{
     display: flex;
-    margin: auto 80px;
+    margin: auto 160px;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding: 0;
+}
+.menu-list__text{
+    font-family: 'Exo-bold';
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
 }
 .menu-list li{
     display: inline-block;
@@ -149,37 +159,43 @@ header{
 
 /*FOOTER*/
 footer{
-    /*background: #000;*/
+    background: #000;
     display: flex;
     height: 120px;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-
+    margin: 0 90px;
+}
+footer div{
+    width: 177px;
+    text-align: center;
 }
 .footer-rrss__list{
     display: flex;
     margin: auto;
+    padding: 0;
 }
 .footer-rrss__list li{
     display: inline-block;
     margin: 0 10px;
 }
+
 /*RESPONSIVE*/
-/*700px*/
-/*
-@media (min-width: 700px) {
-    .video-container{
-        height: 600px;
-    }
-    .menu-container{
-        padding: 55px 0px;
-    }
+@media (max-width: 900px) {
     .menu-list{
-        margin: auto;
-    }
-    .menu-list li{
-        margin: 18px;
+        margin: auto 15%;
     }
 }
-*/
+@media (max-width: 700px) {
+ 
+}
+@media (max-width: 630px){
+    footer{
+        flex-direction: column;
+    }
+    footer div{
+        width: auto;
+    }
+
+}
