@@ -14,16 +14,6 @@ let video = {
 };
 let lim = Object.keys(video).length;//Limit
 
-//Function for the event click button
-menu.addEventListener('click', function(e){
-    activeRemove();
-    id = e.path[1].id;//Get the id of the clicked element
-    let optVideo = video[id];//Option video
-    let selVideo = document.querySelector('#videoOption');
-    selVideo.innerHTML = `<iframe src="https://www.youtube.com/embed/${optVideo}?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>`;
-    document.getElementById(id).classList.add('active');
-});
-
 //Function that removes the active class
 function activeRemove(){
     for (let i=1; i<=lim; i++) {
@@ -31,8 +21,8 @@ function activeRemove(){
     }
 }
 
-
 //COUNTER DOWN------------------------------------------------------------------------------------>
+
 //===
 // VARIABLES
 //===
@@ -46,7 +36,7 @@ const SPAN_SECONDS = document.querySelector('span#seconds');
 const MILLISECONDS_OF_A_SECOND = 1000;
 const MILLISECONDS_OF_A_MINUTE = MILLISECONDS_OF_A_SECOND * 60;
 const MILLISECONDS_OF_A_HOUR = MILLISECONDS_OF_A_MINUTE * 60;
-const MILLISECONDS_OF_A_DAY = MILLISECONDS_OF_A_HOUR * 24
+const MILLISECONDS_OF_A_DAY = MILLISECONDS_OF_A_HOUR * 24;
 
 //===
 // FUNCTIONS
@@ -81,12 +71,6 @@ function updateCountdown() {
     SPAN_SECONDS.textContent = REMAINING_SECONDS;
 }
 
-//===
-// INIT
-//===
-updateCountdown();
-// Refresh every second
-setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
-
+export { menu,video,lim,activeRemove,updateCountdown,MILLISECONDS_OF_A_SECOND };
 
 //END---------------------------------------------------------------------------------------->
