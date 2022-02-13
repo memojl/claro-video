@@ -16,5 +16,18 @@
   "bugs": {
     "url": "https://github.com/memojl/claro-video/issues"
   },
-  "homepage": "https://github.com/memojl/claro-video#readme"
+  "homepage": "https://github.com/memojl/claro-video#readme",
+  "dependencies": {
+    "css-loader": "^6.6.0",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.5.3",
+    "node-sass": "^7.0.1",
+    "rimraf": "^3.0.2",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
 }
