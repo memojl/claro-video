@@ -3,6 +3,7 @@ css - BEM
 Date: 2022-02-10
 */
 
+/*Font EXO*/
 @font-face {
   font-family: 'Exo-light';
   src: url('../fonts/Exo-Light.ttf') format('woff2');
@@ -206,6 +207,9 @@ footer div{
     text-align: center;
     padding-bottom: 5px;
 }
+.footer-privacidad p{
+    font-size: 12px;
+}
 .footer-rrss__list{
     display: flex;
     padding: 0;
@@ -219,6 +223,7 @@ footer div{
 }
 
 /*RESPONSIVE*/
+/*Tablet*/
 @media (max-width: 900px) {
     .menu-list{
         margin: auto 15%;
@@ -252,7 +257,11 @@ footer div{
     footer div{
         width: auto;
     }
+    .footer-privacidad p{
+        font-size: 20px;
+    }
 }
+/*Movil*/
 @media (max-width: 568px){
     .video-display{
         width: 98%;
@@ -265,6 +274,9 @@ footer div{
         width: 60px;
         font-size: 5px;
         padding: 30px 10px;
+    }
+    .slash{
+        display: none;
     }
 }
 @media (max-width: 500px){

@@ -4,7 +4,7 @@
  * Date: 2022-02-10
  */
 
-//MENU
+//MENU---------------------------------------------------------------------------------------->
 let menu = document.querySelector('[data-menu]'); // Selector of the menu
 let video = {
     1:'zpOULjyy-n8',
@@ -32,8 +32,7 @@ function activeRemove(){
 }
 
 
-//COUNTER DOWN
-
+//COUNTER DOWN------------------------------------------------------------------------------------>
 //===
 // VARIABLES
 //===
@@ -90,4 +89,4 @@ updateCountdown();
 setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
 
 
-
+//END---------------------------------------------------------------------------------------->
