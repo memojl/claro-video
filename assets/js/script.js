@@ -1,6 +1,6 @@
 /**
  * Javascript
- * Project: Claro-video
+ * Project: Claro-video / Claro-Sports
  * Date: 2022-02-10
  */
 
@@ -14,6 +14,7 @@ let video = {
 };
 let lim = Object.keys(video).length;//Limit
 
+//Function for the event click button
 menu.addEventListener('click', function(e){
     activeRemove();
     id = e.path[1].id;//Get the id of the clicked element
@@ -23,11 +24,14 @@ menu.addEventListener('click', function(e){
     document.getElementById(id).classList.add('active');
 });
 
+//Function that removes the active class
 function activeRemove(){
     for (let i=1; i<=lim; i++) {
         document.getElementById(i).classList.remove('active');
     }
 }
+
+
 //COUNTER DOWN
 
 //===
