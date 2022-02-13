@@ -5,10 +5,29 @@
  */
 
 //MENU
-let menu = document.querySelector('[data-menu]');
-let btn_opt = menu.children;
-console.log(btn_opt);
+let menu = document.querySelector('[data-menu]'); // Selector of the menu
+let video = {
+    1:'zpOULjyy-n8',
+    2:'MeMiezwvprg',
+    3:'Z5MoBm99w1Q',
+    4:'GUTt0qKUDyU'
+};
+let lim = Object.keys(video).length;//Limit
 
+menu.addEventListener('click', function(e){
+    activeRemove();
+    id = e.path[1].id;//Get the id of the clicked element
+    let optVideo = video[id];//Option video
+    let selVideo = document.querySelector('#videoOption');
+    selVideo.innerHTML = `<iframe src="https://www.youtube.com/embed/${optVideo}?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>`;
+    document.getElementById(id).classList.add('active');
+});
+
+function activeRemove(){
+    for (let i=1; i<=lim; i++) {
+        document.getElementById(i).classList.remove('active');
+    }
+}
 //COUNTER DOWN
 
 //===
