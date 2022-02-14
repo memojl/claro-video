@@ -14,7 +14,7 @@ Total: 15.3hrs.
 
 Tipo de fuente: Exo [Exo-light | Exo Normal | Exo-bold]
 
-Uso de metodología MEB y Variables para el desarrollo de style.css. 
+Uso de metodología BEM y Variables para el desarrollo de style.css. 
 
 URL: https://memojl.github.io/claro-video/
 
