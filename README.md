@@ -16,7 +16,7 @@ URL: https://memojl.github.io/claro-video/
 
 # webpack
 
-Webpack te permite empaquetar y comprimir archivos de una página o aplicacíon web y/o mejorar el rendimiento de carga. 
+Webpack te permite empaquetar y comprimir archivos de una página o aplicación web y/o mejorar el rendimiento de carga. 
 
 **Crear archivo package.json**
 
