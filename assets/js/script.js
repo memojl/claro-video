@@ -17,7 +17,7 @@ let lim = Object.keys(video).length;//Limit
 //Function for the event click button
 menu.addEventListener('click', function(e){
     activeRemove();
-    id = e.path[1].id;//Get the id of the clicked element
+    let id = e.path[1].id;//Get the id of the clicked element
     let optVideo = video[id];//Option video
     let selVideo = document.querySelector('#videoOption');
     selVideo.innerHTML = `<iframe src="https://www.youtube.com/embed/${optVideo}?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>`;
