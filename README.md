@@ -10,7 +10,7 @@ Tiempos de desarrollo
 6. Comentarios de desarrollo y detalles 1hrs
 7. Empaquetado con webpack 3hrs
 
-Total: 15hrs.
+Total: 15.5hrs.
 
 # webpack
 
